@@ -1,6 +1,7 @@
 # model settings
 model = dict(
     type='ImageClassifier',
+    pretrained='torchvision://resnext50_32x4d',
     backbone=dict(
         type='ResNeXt',
         depth=50,

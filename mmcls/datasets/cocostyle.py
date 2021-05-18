@@ -6,7 +6,7 @@ from .builder import DATASETS
 from .base_dataset import BaseDataset
 
 @DATASETS.register_module()
-class MyDataset(BaseDataset):
+class CocoStyle(BaseDataset):
 
     def load_annotations(self):
         assert isinstance(self.ann_file, str)
